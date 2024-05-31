@@ -87,7 +87,7 @@ def weighted_split_test_exec_time_list_assymetrical_speed(original_test_exec_tim
        
 
 
-def identical_machines_total_execution_time(x, n):
+def identical_split_test_exec_time_list_symetrical_speed(x, n):
     print('identical_machines_total_execution_time at work')
     machine_i_test_set = []
     machine_i_test_set_exec_time = []
@@ -127,7 +127,7 @@ def main():
     weighted_machine_speeds = [.16, .32, .32, .16]
     identical_machine_speeds = [1, 1, 1, 1]
     
-    identical_machines_total_execution_time(data_set, len(identical_machine_speeds))
+    identical_split_test_exec_time_list_symetrical_speed(data_set, len(identical_machine_speeds))
 
     weighted_split_test_exec_time_list_assymetrical_speed(data_set, weighted_machine_speeds, absolute_machine_speeds)
     identical_split_test_exec_time_list_assymetrical_speed(data_set, absolute_machine_speeds)
