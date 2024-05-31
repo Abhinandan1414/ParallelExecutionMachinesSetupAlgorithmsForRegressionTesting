@@ -88,7 +88,7 @@ def weighted_split_test_exec_time_list_assymetrical_speed(original_test_exec_tim
 
 
 def identical_split_test_exec_time_list_symetrical_speed(x, n):
-    print('identical_machines_total_execution_time at work')
+    print('identical_split_test_exec_time_list_symetrical_speed at work')
     machine_i_test_set = []
     machine_i_test_set_exec_time = []
     x = sorted(x, reverse=True)
