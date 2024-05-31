@@ -57,7 +57,7 @@ def identical_machines_total_execution_time(x, n):
 
 
 def main():
-    df = pandas.read_csv(os.path.join(os.getcwd(), "Regression\\testexecutiondata.csv"),
+    df = pandas.read_csv(os.path.join(os.getcwd(), "Algorithms\\testexecutiondata.csv"),
                          sep=',')
 
     data_set = df["execution_time"].to_list()
