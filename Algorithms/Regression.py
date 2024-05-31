@@ -2,7 +2,7 @@ import math
 import pandas
 import os
 
-def identical_split_test_exec_time_list_assymetrical_speed_round_robin_post_sort(original_test_exec_time_list, absolute_machine_speeds):
+def identical_split_of_test_exec_time_list_assymetrical_speed_round_robin_post_sort(original_test_exec_time_list, absolute_machine_speeds):
     print('identical_split_test_exec_time_list_assymetrical_speed_round_robin_post_sort at work')
     machine_i_test_set = []
     machine_i_test_set_exec_time = []
@@ -33,7 +33,7 @@ def identical_split_test_exec_time_list_assymetrical_speed_round_robin_post_sort
     print("All Machines will put together will be busy for",sum(machine_i_test_set_exec_time))
 
 
-def identical_split_test_exec_time_list_assymetrical_speed(original_test_exec_time_list, absolute_machine_speeds):
+def identical_split_of_test_exec_time_list_assymetrical_speed(original_test_exec_time_list, absolute_machine_speeds):
     print('identical_split_test_exec_time_list_assymetrical_speed at work')
     machine_i_test_set = []
     machine_i_test_set_exec_time = []
@@ -60,7 +60,7 @@ def identical_split_test_exec_time_list_assymetrical_speed(original_test_exec_ti
     
     print("All Machines will put together will be busy for",sum(machine_i_test_set_exec_time))
 
-def weighted_split_test_exec_time_list_assymetrical_speed(original_test_exec_time_list, weight_list, absolute_machine_speeds):
+def weighted_split_of_test_exec_time_list_assymetrical_speed(original_test_exec_time_list, weight_list, absolute_machine_speeds):
     print('weighted_split_test_exec_time_list_assymetrical_speed at work')
     machine_i_test_set = []
     machine_i_test_set_exec_time = []
@@ -87,7 +87,7 @@ def weighted_split_test_exec_time_list_assymetrical_speed(original_test_exec_tim
        
 
 
-def identical_split_test_exec_time_list_symetrical_speed(x, n):
+def identical_split_of_test_exec_time_list_symetrical_speed(x, n):
     print('identical_split_test_exec_time_list_symetrical_speed at work')
     machine_i_test_set = []
     machine_i_test_set_exec_time = []
@@ -127,10 +127,10 @@ def main():
     weighted_machine_speeds = [.16, .32, .32, .16]
     identical_machine_speeds = [1, 1, 1, 1]
     
-    identical_split_test_exec_time_list_symetrical_speed(data_set, len(identical_machine_speeds))
+    identical_split_of_test_exec_time_list_symetrical_speed(data_set, len(identical_machine_speeds))
 
-    weighted_split_test_exec_time_list_assymetrical_speed(data_set, weighted_machine_speeds, absolute_machine_speeds)
-    identical_split_test_exec_time_list_assymetrical_speed(data_set, absolute_machine_speeds)
-    identical_split_test_exec_time_list_assymetrical_speed_round_robin_post_sort(data_set, absolute_machine_speeds)
+    weighted_split_of_test_exec_time_list_assymetrical_speed(data_set, weighted_machine_speeds, absolute_machine_speeds)
+    identical_split_of_test_exec_time_list_assymetrical_speed(data_set, absolute_machine_speeds)
+    identical_split_of_test_exec_time_list_assymetrical_speed_round_robin_post_sort(data_set, absolute_machine_speeds)
     
 main()
